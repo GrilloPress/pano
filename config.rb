@@ -47,10 +47,14 @@
 #   end
 # end
 
+helpers do
+  def is_page_selected(page)
+    current_page.url == page ? "active" : ''
+  end
+end
+
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 # Build-specific configuration
@@ -60,7 +64,6 @@ configure :build do
   
   activate :minify_css
   activate :minify_javascript
-  activate :relative_assets
   set :relative_links, true
 
   # Minify Javascript on build
@@ -70,7 +73,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

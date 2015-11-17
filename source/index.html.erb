@@ -1,13 +1,23 @@
 ---
-title: Welcome my Emissary
+title: Autologous Haematopoietic Stem Cell Transplantation (AHSCT) 
 ---
+<p class="lead">Recently a programme produced by Panorama has highlighted the clinical treatment and research being conducted at Sheffield Teaching Hospitals NHS Foundation Trust for some patients with Multiple Sclerosis.</p>
+<p>The treatment has been made available through an innovative partnership between our Haematologists and Neurologists.</p>
+<p>A small number of patients with relapsing, remitting MS have received the Autologous Haematopoietic Stem Cell Transplantation (AHSCT) and a clinical research trial is underway to test the long term effects for patients with relapsing/remitting MS.</p>
+<p>The procedure involves removing the harmful immune system that attacks the brain and spinal cord in MS, and then uses a person’s own bone marrow stem cells to effectively re-grow the immune system. The aim is that re-booting the immune system in this way will prevent further damage in the brain and spinal cord.</p>
+<p>If you are interested in finding out more please read our Frequently Asked Questions and further information about research involving this treatment is also available on the <a href="https://www.mssociety.org.uk/" target="_blank">MS Society</a> and <a href="https://www.mstrust.org.uk/" target="_blank">MS Trust</a> webistes.</p>
+<p>Please note if you wish to discuss whether you are suitable for the treatment you need to speak to your own neurologist or GP FIRST. We cannot consider you for a consultation without a referral from your Neurologist or GP.</p>
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h1>
-      </div>
-    </div>
-  </div>
-</section>
+<h2>Frequently Asked Questions</h2>
+<p>Autologous Haematopoietic Stem Cell Transplantation (AHSCT)  is being investigated as a treatment for severe immune-mediated diseases, particularly MS here at Sheffield Teaching Hospitals NHS Foundation Trust.</p>
+<p>The procedure involves removing the harmful immune system that attacks the brain and spinal cord in MS, and then uses a person’s own bone marrow stem cells to effectively re-grow the immune system. The aim is that re-booting the immune system in this way will prevent further damage in the brain and spinal cord.</p>
+<ul class="list list-unstyled">
+  <% data.faqs.questions.each do |f| %>
+  <li><a href="#<%= f.id %>"><%= f.question %></a></li>
+  <% end %>
+</ul>
+
+<% data.faqs.questions.each do |f| %>
+  <h3 id="<%= f.id %>"><%= f.question %></h3>
+  <%= f.answer %>
+<% end %>

@@ -1,0 +1,32 @@
+.container {
+  
+  background-color: white;
+  
+}
+
+.hero {
+  
+  background-color: $brand-primary;
+  color: white;
+  padding: 1em 1em 0 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-left: -15px;
+  margin-right: -15px;
+  
+  a {
+    
+    color: white;
+    text-align: center;
+    
+  }
+  
+  h1 {
+    
+    font-size: 2.2em;
+    text-align: center;
+    padding: 1em;
+    
+  }
+  
+}
