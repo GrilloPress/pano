@@ -27,7 +27,7 @@
     <h3 class="panel-title">Frequently Asked Questions</h3>
   </div>
   <div class="panel-body">
-    <ul class="list list-unstyled">
+    <ul>
       <% data.faqs.questions.each do |f| %>
         <li><a href="#<%= f.id %>"><%= f.question %></a></li>
       <% end %>
