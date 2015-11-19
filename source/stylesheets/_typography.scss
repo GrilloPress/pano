@@ -1,0 +1,19 @@
+.faqs {
+  
+  list-style-type: none;
+  padding: 0;
+  
+  li:first-child {
+    
+    border-top: 1px solid #DDDDDD;
+    
+  }
+  
+  li {
+    
+    padding: 0.5em;
+    border-bottom: 1px solid #DDDDDD;
+    
+  }
+  
+}

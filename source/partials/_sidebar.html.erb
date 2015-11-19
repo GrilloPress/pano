@@ -1,15 +1,17 @@
-<div class="panel panel-primary">
+<div class="panel panel-primary" id="contact-information">
   <div class="panel-heading">
     <h3 class="panel-title">Contact Information</h3>
   </div>
   <div class="panel-body">
     <p>Before you contact us about the Autologous Haematopoietic Stem Cell Transplantation (AHSCT)  treatment please discuss your suitability with your own Neurologist, MS Nurse or GP.</p>
-    <a href="mailto:MSStemCell@sth.nhs.uk">Email: MSStemCell@sth.nhs.uk</a>
-    <a href="tel:01142715934">Tel: 0114 2715934</a>
   </div>
+  <ul class="list-group">
+    <li class="list-group-item"><a href="mailto:MSStemCell@sth.nhs.uk">Email: MSStemCell@sth.nhs.uk</a></li>
+    <li class="list-group-item"><a href="tel:01142715934">Tel: 0114 2715934</a></li>
+  </ul>
 </div>
 
-<div class="panel panel-primary">
+<div class="panel panel-primary" id="referral-information">
   <div class="panel-heading">
     <h3 class="panel-title">Referral Information</h3>
   </div>
@@ -25,15 +27,42 @@
   </div>
 </div>
 
-<div class="panel panel-primary">
+<div class="panel panel-primary" id="">
+  <div class="panel-heading">
+    <h3 class="panel-title">MS Service at Sheffield Teaching Hospitals </h3>
+  </div>
+  <div class="panel-body">
+    <p>The department provides a comprehensive inpatient outpatient and day case service to people with multiple sclerosis and allied conditions- such  as Neuromyelitis Optica.</p>
+    <p>We have a team of consultants interested in multiple sclerosis and one with a neurological disability interest. There is also an excellent team of MS Specialist nurses.</p>
+    <p>The service is supported by excellent in patient, day patient and diagnostic radiology and neurophysiology services. The team is also involved in patient and health professional education and highly active in research, both clinical trials and through links with basic science researchers.</p>
+  </div>
+</div>
+
+<div class="panel panel-primary" id="">
   <div class="panel-heading">
     <h3 class="panel-title">Frequently Asked Questions</h3>
   </div>
-  <div class="panel-body">
-    <ul>
-      <% data.faqs.questions.each do |f| %>
-        <li><a href="#<%= f.id %>"><%= f.question %></a></li>
-      <% end %>
-    </ul>
+  
+  <ul class="list-group">
+  <% x = 0 %>
+   <% data.faqs.questions.each do |f| %>
+    <% if x < 5 %>
+    <li class="list-group-item"><a href="#<%= f.id %>"><%= f.question %></a></li>
+      <% x += 1 %>
+    <% end %>
+   <% end %>
+    <li class="list-group-item"><a href="#questions">See full list of Questions &raquo;</a></li>
+  </ul>
+</div>
+
+<div class="panel panel-primary" id="further-resources">
+  <div class="panel-heading">
+    <h3 class="panel-title">Further Resources</h3>
   </div>
+   <ul class="list-group">
+    <li class="list-group-item"><a href="https://www.sth.nhs.uk/" target="_blank">Sheffield Teaching Hospitals Website</a></li>
+    <li class="list-group-item"><a href="https://www.mssociety.org.uk/" target="_blank">MS Society Website</a></li>
+    <li class="list-group-item"><a href="https://www.mstrust.org.uk/" target="_blank">MS Trust Website</a></li>
+    <li class="list-group-item"><a href="https://www.mssociety.org.uk/ms-research/emerging-areas/stem-cells/AHSCT" target="_blank">MS Society Autologous Haematopoietic Stem Cell Transplantation Page</a></li>
+  </ul>
 </div>
