@@ -1,0 +1,20 @@
+<h2 id="questions">Frequently Asked Questions</h2>
+<p>Autologous Haematopoietic Stem Cell Transplantation (AHSCT)  is being investigated as a treatment for severe immune-mediated diseases, particularly MS here at Sheffield Teaching Hospitals NHS Foundation Trust.</p>
+<p>The procedure involves removing the harmful immune system that attacks the brain and spinal cord in MS, and then uses a person’s own bone marrow stem cells to effectively re-grow the immune system. The aim is that re-booting the immune system in this way will prevent further damage in the brain and spinal cord.</p>
+
+<ul class="faqs">
+  <% data.faqs.questions.each do |f| %>
+  <li><a href="#<%= f.id %>"><%= f.question %></a></li>
+  <% end %>
+</ul>
+
+<% data.faqs.questions.each do |f| %>
+  <h3 id="<%= f.id %>"><%= f.question %></h3>
+  <%= f.answer %>
+  <div class="clearfix">
+    <a href="#questions" class="pull-right" title="Back to the Top">
+      Return to Questions
+    </a>
+  </div>
+<% end %>
+<br>
