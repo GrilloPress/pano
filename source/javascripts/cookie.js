@@ -1,8 +1,8 @@
 // Creare's 'Implied Consent' EU Cookie Law Banner v:2.4
 // Conceived by Robert Kent, James Bavington & Tom Foyster
  
-var dropCookie = true;                      // false disables the Cookie, allowing you to style the banner
-var cookieDuration = 14;                    // Number of days before the cookie expires, and the banner reappears
+var dropCookie = false;                      // false disables the Cookie, allowing you to style the banner
+var cookieDuration = 365;                    // Number of days before the cookie expires, and the banner reappears
 var cookieName = 'complianceCookie';        // Name of our cookie
 var cookieValue = 'on';                     // Value of cookie
  
@@ -10,7 +10,7 @@ function createDiv(){
     var bodytag = document.getElementsByTagName('body')[0];
     var div = document.createElement('div');
     div.setAttribute('id','cookie-law');
-    div.innerHTML = '<p>Our website uses cookies. By continuing we assume your permission to deploy cookies, as detailed in our <a href="/privacy-cookies-policy/" rel="nofollow" title="Privacy &amp; Cookies Policy">privacy and cookies policy</a>. <a class="close-cookie-banner" href="javascript:void(0);" onclick="removeMe();"><span>X</span></a></p>';    
+    div.innerHTML = '<p>We use cookies to make the site simpler. <a href="http://www.sth.nhs.uk/cookie-policy" target="_blank" rel="nofollow" title="Privacy &amp; Cookies Policy">Find out more about our policy</a>. <a class="close-cookie-banner" href="javascript:void(0);" onclick="removeMe();"><span>X</span></a></p>';    
     // Be advised the Close Banner 'X' link requires jQuery
      
     // bodytag.appendChild(div); // Adds the Cookie Law Banner just before the closing </body> tag
