@@ -26,6 +26,9 @@ questions:
   - id: 10
     question: "Where can I get it on the NHS?"
     answer: "<p>In the UK the treatment has been delivered here at Sheffield Teaching Hospitals NHS Foundation Trust and King’s College Hospital, London and some other centres. However, before contacting these Centres you should discuss the treatment with your own Neurologist of GP in the first instance as the treatment is not suitable for everyone.</p>"
+  - id: 16
+    question: "Is it available privately? (Overseas &amp; fee paying patients)"
+    answer: "<p>We have a limited capacity for overseas &amp; fee paying patients. To discuss the possibility of this option, please contact <a href='mailto:private-healthcare@sth.nhs.uk?subject=Private%20Access%20to%20AHSCT%20for%20Multiple%20Sclerosis'>our dedicated private patient team</a> in the first instance.</p>"
   - id: 11
     question: "How does my GP or Neurologist refer to the Sheffield MS service for a consultation?"
     answer: "<p>Please get your GP or Neurologist to send a written referral to:</p><address>Multiple Sclerosis Clinic,<br>Royal Hallamshire Hospital,<br> Glossop Road,<br> Sheffield S10 2JF<br> South Yorkshire<br> England</address>"
